@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoUser Game</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body>
+    <div class="container" id="game-container">
+      <img
+        id="location-image"
+        src="assets/images/tokyo.jpg"
+        alt="Location Image"
+      />
+      <div id="countdown">Time left: 60 seconds</div>
+      <div id="map"></div>
+      <div id="controls">
+        <button id="submit-guess">Submit Guess</button>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="assets/map.js"></script>
+  </body>
+</html>
